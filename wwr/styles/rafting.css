@@ -2,7 +2,7 @@
   --primary-color: #007bff;
   --secondary-color: #28a745;
   --background-color: #f8f9fa;
-  ----text-color: #343a40;
+  --text-color: #343a40;
 }
 
 body {
@@ -12,12 +12,17 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto lfr;
   align-items: center;
   padding: 20px;
   background-color: var(--primary-color);
   color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
 }
 
 nav a {
@@ -27,7 +32,6 @@ nav a {
 }
 
 .hero {
-  position: relative;
   text-align: center;
   color: #fff;
 }
@@ -45,7 +49,41 @@ h1 {
   font-size: 3em;
 }
 
-article {
+.adventure {
+  padding: 20px;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+figure {
+  text-align: center;
+  margin: 10px;
+}
+
+article p {
+  color: var(--text-color);
+}
+
+.history {
+  padding: 20px;
+  background-color: #e9ecef;
+}
+
+/* section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+} */
+
+/* h2 {
+  margin-bottom: 10px;
+} */
+
+/* article {
   position: absolute;
   bottom: 10%;
   left: 50%;
@@ -62,18 +100,22 @@ article {
 
 section {
   padding: 20px;
-}
+} */
 
 footer {
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
   background-color: var(--secondary-color);
   color: #fff;
 }
 
-footer img {
+.social-icons img {
   width: 30px;
-  height: auto;
   margin-left: 10px;
-  text-decoration: none;
 }
+
+/* .social-icons {
+  display: flex;
+}*/
