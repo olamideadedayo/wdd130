@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 :root {
   --primary-color: #007bff;
   --secondary-color: #28a745;
@@ -19,6 +25,7 @@ header {
   background-color: var(--primary-color);
   color: #fff;
 }
+
 
 nav {
   display: flex;
@@ -102,6 +109,134 @@ section {
   padding: 20px;
 } */
 
+/* CONTACT PAE STARTS */
+
+/*CONTACT INFORMATION SECTION STARTS */
+.contact-info {
+  padding: 20px;
+  background-color: #e9ecef;
+  color: var(--text-color);
+}
+
+.contact-info h2 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.contact-info iframe {
+  width: 100%;
+  height: 350px;
+  margin-top: 15px;
+  border: none;
+}
+
+/* EMPLOYEE PROFILES SECTION STARTS */
+.employee-profiles {
+  padding: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.employee-profiles h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.employee-profiles figure {
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
+}
+
+.employee-profiles img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-profiles figcaption {
+  margin-top: 10px;
+  font-size: 1em;
+  color: var(--text-color);
+}
+
+/* CONTACT FORM SECTION STARTS */
+.contact-form {
+  padding: 20px;
+  background-color: #f1f3f5;
+  color: var(--text-color);
+}
+
+.contact-form h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.contact-form button[type="submit"] {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* MOBILE RESPONSIVENESS STARTS */
+@media (max-width: 768px) {
+  .employee-profiles figure {
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+  }
+
+  .contact-form form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*FOOTER STARTS*/
 footer {
   display: flex;
   justify-content: space-between;
