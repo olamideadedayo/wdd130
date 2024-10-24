@@ -26,7 +26,6 @@ header {
   color: #fff;
 }
 
-
 nav {
   display: flex;
   justify-content: flex-end;
@@ -48,6 +47,73 @@ nav a {
   height: auto;
 }
 
+/* HOME PAGE/INDEX PAGE STARTS*/
+.newsletter {
+  padding: 20px;
+  background-color: #e9ecef;
+  text-align: center;
+}
+
+.newsletter h2 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.newsletter form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #218838;
+}
+
+.call-to-action {
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.call-to-action h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.call-to-action .cta-button {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.call-to-action .cta-button:hover {
+  background-color: #218838;
+}
+/* HOME PAGE/INDEX PAGE ENDS*/
+
 h1 {
   position: absolute;
   top: 20%;
@@ -58,6 +124,10 @@ h1 {
 
 .adventure {
   padding: 20px;
+}
+
+.adventure h2 {
+  text-align: center;
 }
 
 .adventure-gallery {
@@ -80,36 +150,7 @@ article p {
   background-color: #e9ecef;
 }
 
-/* section {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0;
-} */
-
-/* h2 {
-  margin-bottom: 10px;
-} */
-
-/* article {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-}
-
-.client-image {
-  float: right;
-  width: 100px;
-  height: auto;
-}
-
-section {
-  padding: 20px;
-} */
-
-/* CONTACT PAE STARTS */
+/* CONTACT PAGE STARTS */
 
 /*CONTACT INFORMATION SECTION STARTS */
 .contact-info {
@@ -222,6 +263,7 @@ section {
 .contact-form button[type="submit"]:hover {
   background-color: #218838;
 }
+/* CONTACT PAGE ENDS*/
 
 /* MOBILE RESPONSIVENESS STARTS */
 @media (max-width: 768px) {
@@ -251,6 +293,64 @@ footer {
   margin-left: 10px;
 }
 
-/* .social-icons {
-  display: flex;
-}*/
+/* TRIPS SECTION STARTS */
+.trip-details {
+  padding: 20px;
+}
+
+.trip-details h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.trip-details article {
+  margin-bottom: 20px;
+}
+
+.trip-details img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.trip-table {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.trip-table h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.trip-table th,
+.trip-table td {
+  border: 1px solid #ced4da;
+  padding: 10px;
+  text-align: left;
+}
+
+.trip-table th {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+/*TRIPS SECTION ENDS*/
+
+/* ADVENTURE-GALLERY AND NEWSLETTER MOBILE RESPONSIVENESS*/
+@media (max-width: 768px) {
+  .newsletter form {
+    grid-template-columns: 1fr;
+  }
+
+  .adventure-gallery {
+    grid-template-columns: 1fr;
+  }
+}
