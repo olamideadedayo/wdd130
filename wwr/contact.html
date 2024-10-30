@@ -1,119 +1,77 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Please do gget in touch with us  at White Water Rafting for inquiries, bookings, or general information. We're here to assist you."
-    />
-    <meta name="author" content="Falana Adedayo Joseph" />
-    <title>Contact Us - White Water Rafting</title>
-    <link rel="stylesheet" href="styles/rafting.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">  
     <header>
-      <img
-        src="images/water-rafting -logo.png"
-        alt="Water Rafting Logo"
-        id="logo"
-      />
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="trips.html">Trips</a>
-        <a href="#">Contact Us</a>
-      </nav>
+        <a href="index.html" id="logo_link">
+        <img src="images/whitewater_rafting_logo.png" alt="Dry Oar Logo" class="logo">
+        </a>
+        <nav>
+            <a href="index.html" >Home</a>
+            <a href="faq.html" >FAQs</a>
+            <a href="site-plan-rafting.html" >Site plan</a>
+            <a href="Contactus.html" >Contact Us</a>
+        </nav>
     </header>
-
+    <div id="hero">
+        <div id="hero-box">
+            <img src="images/hero.png" id="hero-img" alt="People Enjoying Whitewater Rafting">
+        </div>
+        <section id="hero-msg">
+            <h1 class="home-title">Have An Adventure</h1>
+            <h4>Make Memories with Dry</h4>
+            <div class="button-box">
+                <a href="contactus.html" class="book">Book Now</a>
+            </div>
+        </section>
+        
+    </div> 
     <main>
-      <section class="contact-info">
-        <h2>Our Contact Information</h2>
-        <p>Address: 08 Rafting Road, RapidsVille, WA</p>
-        <p>Phone Number: +234 901 268 8076</p>
-        <p>Email: olamideadedayo@gmail.com</p>
-        <iframe
-          src="https://www.google.com/maps/embed?..."
-          width="600"
-          height="450"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </section>
-
-      <section class="employee-profiles">
-        <h2>Meet Our Teams of Employees</h2>
-        <figure>
-          <img src="images/employee.jpg" alt="Employee 1" />
-          <figcaption>kelvin Lee - Lead Instructor</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee2.jpg" alt="Employee 2" />
-          <figcaption>Jane Smith - Safety Officer</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee3.jpg" alt="Employee 3" />
-          <figcaption>Mike Laurry - Adventure Guide</figcaption>
-        </figure>
-      </section>
-
-      <section class="contact-form">
-        <h2>Get in Touch With Us</h2>
-        <form action="submit_form.php" method="post">
-          <label for="name">Please Input Your Name:</label>
-          <input type="text" id="name" name="name" required /><br />
-
-          <label for="email">Please Input Your Email:</label>
-          <input type="email" id="email" name="email" required /><br />
-
-          <p>Your Purpose of Inquiry:</p>
-          <label
-            ><input type="radio" name="purpose" value="General Inquiry" />
-            General Inquiry</label
-          ><br />
-          <label
-            ><input type="radio" name="purpose" value="Reservation Question" />
-            Reservation Question</label
-          ><br />
-          <label
-            ><input type="radio" name="purpose" value="Website Suggestion" />
-            Website Suggestion</label
-          ><br />
-
-          <label for="message">Your Message:</label><br />
-          <textarea id="message" name="message" rows="4" required></textarea
-          ><br />
-
-          <label
-            ><input type="checkbox" name="newsletter" /> Please subscribe me to
-            the monthly newsletter</label
-          ><br />
-
-          <button type="submit">Submit</button>
-        </form>
-      </section>
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post"
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Send your message</button>
+              </li>
+              
+            </ul>
+          </form>
     </main>
-
     <footer>
-      <p>
-        &copy;2024 White Water Rafting | Falana Adedayo Joseph Lagos, Nigeria
-      </p>
-      <div class="social-icons">
-        <a href="https://facebook.com"
-          ><img src="images/facebook-icon.png" alt="Facebook"
-        /></a>
-        <a href="https://x.com"
-          ><img src="images/x-icon.png" alt="Twitter"
-        /></a>
-        <a href="https://instagram.com"
-          ><img src="images/instagram-icon.png" alt="Instagram"
-        /></a>
-        <a href="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-aboutus-update.png">Contact Us Page Wireframe</a>
-      </div>
+        <p>Dry Oar &copy; 2023 -Falana Adedayo Joseph.</p>
+        <p><a href="site-plan-rafting.html">Site plan</a></p>
+        <p><a href="contactus.html">contact us</a></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
     </footer>
-  </body>
+  
+</body>
 </html>
