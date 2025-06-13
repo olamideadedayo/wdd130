@@ -1,6 +1,6 @@
 header {
-  background-color: #1e90ff; /* Dodger Blue */
-  color: white;
+  background-color: blue;
+  color: white; /* Makes the text readable on blue background */
   padding: 20px;
   text-align: center;
 }
