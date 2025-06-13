@@ -10,7 +10,6 @@ header {
   display: flex;
   justify-content: center;
   gap: 30px;
-  background-color: #0056b3; /* Darker blue for contrast */
   padding: 15px 0;
 }
 
