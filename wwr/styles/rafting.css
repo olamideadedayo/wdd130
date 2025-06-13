@@ -1,356 +1,71 @@
-* {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #28a745;
-  --background-color: #f8f9fa;
-  --text-color: #343a40;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--background-color);
-  margin: 0;
-}
-
-header {
-  display: grid;
-  grid-template-columns: auto lfr;
-  align-items: center;
-  padding: 20px;
-  background-color: var(--primary-color);
-  color: #fff;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 20px;
-}
-
-.hero {
-  text-align: center;
-  color: #fff;
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
-}
-
-/* HOME PAGE/INDEX PAGE STARTS*/
-.newsletter {
-  padding: 20px;
-  background-color: #e9ecef;
-  text-align: center;
-}
-
-.newsletter h2 {
-  color: var(--primary-color);
-  margin-bottom: 15px;
-}
-
-.newsletter form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  max-width: 600px;
-  margin: auto;
-}
-
-.newsletter input[type="text"],
-.newsletter input[type="email"] {
-  padding: 10px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
-}
-
-.newsletter button {
-  background-color: var(--secondary-color);
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.newsletter button:hover {
-  background-color: #218838;
-}
-
-.call-to-action {
-  padding: 20px;
-  text-align: center;
-  background-color: #f8f9fa;
-}
-
-.call-to-action h2 {
-  color: var(--primary-color);
-  margin-bottom: 10px;
-}
-
-.call-to-action .cta-button {
-  display: inline-block;
-  padding: 15px 25px;
-  background-color: var(--secondary-color);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.call-to-action .cta-button:hover {
-  background-color: #218838;
-}
-/* HOME PAGE/INDEX PAGE ENDS*/
-
-h1 {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3em;
-}
-
-.adventure {
-  padding: 20px;
-}
-
-.adventure h2 {
-  text-align: center;
-}
-
-.adventure-gallery {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-figure {
-  text-align: center;
-  margin: 10px;
-}
-
-article p {
-  color: var(--text-color);
-}
-
-.history {
-  padding: 20px;
-  background-color: #e9ecef;
-}
-
-/* CONTACT PAGE STARTS */
-
-/*CONTACT INFORMATION SECTION STARTS */
-.contact-info {
-  padding: 20px;
-  background-color: #e9ecef;
-  color: var(--text-color);
-}
-
-.contact-info h2 {
-  color: var(--primary-color);
-  margin-bottom: 15px;
-}
-
-.contact-info p {
-  font-size: 1.1em;
-  line-height: 1.5;
+.contact-info,
+.employees,
+.contact-form {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 10px;
 }
 
 .contact-info iframe {
   width: 100%;
-  height: 350px;
-  margin-top: 15px;
+  height: 300px;
+  margin-top: 1rem;
   border: none;
 }
 
-/* EMPLOYEE PROFILES SECTION STARTS */
-.employee-profiles {
-  padding: 20px;
-  background-color: var(--background-color);
-  color: var(--text-color);
+.employee-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.employee-gallery figure {
+  width: 200px;
   text-align: center;
 }
 
-.employee-profiles h2 {
-  color: var(--primary-color);
-  margin-bottom: 20px;
-}
-
-.employee-profiles figure {
-  display: inline-block;
-  margin: 15px;
-  text-align: center;
-}
-
-.employee-profiles img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.employee-profiles figcaption {
-  margin-top: 10px;
-  font-size: 1em;
-  color: var(--text-color);
-}
-
-/* CONTACT FORM SECTION STARTS */
-.contact-form {
-  padding: 20px;
-  background-color: #f1f3f5;
-  color: var(--text-color);
-}
-
-.contact-form h2 {
-  color: var(--primary-color);
-  margin-bottom: 20px;
+.employee-gallery img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .contact-form form {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form fieldset {
+  border: none;
+  padding: 0;
 }
 
 .contact-form label {
-  font-weight: bold;
-  color: var(--text-color);
+  margin-bottom: 0.25rem;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
-  font-size: 1em;
-}
-
-.contact-form textarea {
-  resize: vertical;
-}
-
-.contact-form input[type="checkbox"] {
-  margin-right: 5px;
-}
-
-.contact-form button[type="submit"] {
-  background-color: var(--secondary-color);
-  color: #fff;
-  padding: 10px 15px;
+.contact-form button {
+  background-color: #0288d1;
+  color: white;
+  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
-  font-size: 1.1em;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button[type="submit"]:hover {
-  background-color: #218838;
-}
-/* CONTACT PAGE ENDS*/
-
-/* MOBILE RESPONSIVENESS STARTS */
-@media (max-width: 768px) {
-  .employee-profiles figure {
-    width: 100%;
-    display: block;
-    margin: 20px 0;
-  }
-
-  .contact-form form {
-    grid-template-columns: 1fr;
-  }
-}
-
-/*FOOTER STARTS*/
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: var(--secondary-color);
-  color: #fff;
-}
-
-.social-icons img {
-  width: 30px;
-  margin-left: 10px;
-}
-
-/* TRIPS SECTION STARTS */
-.trip-details {
-  padding: 20px;
-}
-
-.trip-details h2 {
-  text-align: center;
-  color: var(--primary-color);
-  margin-bottom: 15px;
-}
-
-.trip-details article {
-  margin-bottom: 20px;
-}
-
-.trip-details img {
-  width: 100%;
-  height: auto;
   border-radius: 5px;
 }
 
-.trip-table {
-  padding: 20px;
-  background-color: #f8f9fa;
+.contact-form button:hover {
+  background-color: #0277bd;
 }
 
-.trip-table h2 {
-  text-align: center;
-  color: var(--primary-color);
-  margin-bottom: 10px;
-}
-
-.trip-table table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-}
-
-.trip-table th,
-.trip-table td {
-  border: 1px solid #ced4da;
-  padding: 10px;
-  text-align: left;
-}
-
-.trip-table th {
-  background-color: var(--primary-color);
-  color: #fff;
-}
-/*TRIPS SECTION ENDS*/
-
-/* ADVENTURE-GALLERY AND NEWSLETTER MOBILE RESPONSIVENESS*/
-@media (max-width: 768px) {
-  .newsletter form {
-    grid-template-columns: 1fr;
-  }
-
-  .adventure-gallery {
-    grid-template-columns: 1fr;
-  }
-}
