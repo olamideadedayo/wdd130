@@ -1,3 +1,10 @@
+header {
+  background-color: #1e90ff; /* Dodger Blue */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
 .contact-info,
 .employees,
 .contact-form {
