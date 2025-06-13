@@ -1,10 +1,28 @@
 header {
-  background-color: blue;
-  color: white; /* Makes the text readable on blue background */
+  background-color: #007BFF; /* Bootstrap Blue - clean and bright */
+  color: white;
   padding: 20px;
   text-align: center;
 }
 
+/* Style for the nav or reference links under the header */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #0056b3; /* Darker blue for contrast */
+  padding: 15px 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
 .contact-info,
 .employees,
 .contact-form {
