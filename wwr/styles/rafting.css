@@ -22,6 +22,7 @@ header {
   border: none;
 }
 
+
 .employee-gallery {
   display: flex;
   justify-content: space-around;
@@ -75,3 +76,4 @@ header {
 .contact-form button:hover {
   background-color: #0277bd;
 }
+
