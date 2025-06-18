@@ -1,15 +1,14 @@
 body {
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
-  background-color: #007BFF; /* Bootstrap Blue - clean and bright */
+  background-color: #007BFF;
   color: white;
   padding: 20px;
   text-align: center;
 }
 
-/* Style for the nav or reference links under the header */
 .nav-links {
   display: flex;
   justify-content: center;
@@ -21,19 +20,26 @@ header {
   color: white;
   text-decoration: none;
   font-weight: bold;
-} 
+}
 
 .nav-links a:hover {
   text-decoration: underline;
+}
+
+.nav-links a:focus,
+.contact-form button:focus {
+  outline: 2px dashed #fff;
+  outline-offset: 4px;
 }
 
 #logo {
   position: absolute;
   top: 10px;
   right: 20px;
-  width: 60px; /* Adjust size as needed */
+  width: 60px;
   height: auto;
 }
+
 .contact-info,
 .employees,
 .contact-form {
@@ -42,6 +48,7 @@ header {
   padding: 1rem;
   background-color: #f5f5f5;
   border-radius: 10px;
+  color: #333;
 }
 
 .contact-info iframe {
@@ -50,7 +57,6 @@ header {
   margin-top: 1rem;
   border: none;
 }
-
 
 .employee-gallery {
   display: flex;
@@ -103,10 +109,12 @@ header {
 }
 
 .contact-form button:hover {
-  background-color: #0277bd;
+  background-color: #0277bd;
 }
 
 footer {
-  background-color: #007BFF; /* Bootstrap Blue - clean and bright */
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
